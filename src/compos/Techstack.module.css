@@ -1,0 +1,7 @@
+    .con {
+        display: flex;
+    }
+.list {
+    display: flex;
+    flex-direction: column;
+}
