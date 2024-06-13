@@ -1,5 +1,5 @@
 import styles from './Techstack.module.css'
-import Techcard from './Card'
+// import Techcard from './Card'
 
 
 

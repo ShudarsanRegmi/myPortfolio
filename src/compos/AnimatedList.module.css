@@ -1,0 +1,31 @@
+.mainCon {
+    border: 1px solid black;
+    background: orange;
+    display: flex;
+}
+
+.con {
+    border: 1px solid black;
+    padding: 2px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.cardImgCon {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardimg {
+    max-width: 50%;
+}
+
+.para {
+    position: absolute;
+    bottom: 0;
+}

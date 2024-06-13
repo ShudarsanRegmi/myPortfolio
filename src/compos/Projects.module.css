@@ -1,0 +1,42 @@
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+}
+
+.title {
+    font-weight: 700;
+    background-color: orange;
+    border-radius: 40% 40% 0% 0%;
+    padding: 10px 10px 5px 10px;
+    /* border: 1px solid black; */
+    display: inline-block;  
+
+
+}
+
+
+.body {
+    background-color: cyan;
+    padding: 2px;
+}
+.contentCon {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+.leftCon {
+    padding: 2%;
+    flex: .8;
+}
+
+.leftCon img {
+       
+}
+
+.rightCon {
+    padding: 2%;
+    flex: 1;
+}
