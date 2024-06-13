@@ -8,8 +8,8 @@ import AnimatedList from './compos/AnimatedList'
 import htmlIcon from '/html.svg'
 import vite from '/vite.svg'
 import VerticalAccordion from './compos/VerticalAccordion'
-
-
+import {Social} from './compos/Social'
+import {Contact} from './compos/Contact'
 function App() {
 
   return (
@@ -20,6 +20,8 @@ function App() {
       {/* <AnimatedList /> */}
       {/* <Projects /> */}
       <VerticalAccordion />
+      <Social />
+      <Contact />
     </>
   )
 }
