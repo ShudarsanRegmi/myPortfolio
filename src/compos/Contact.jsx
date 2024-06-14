@@ -27,7 +27,7 @@ export const Contact = () => {
                 "Content-Type": "application/json",
                 Accept: "application/jsonname"
             },
-            body: JSON.stringify({ name:name, email: email, message: message })
+            body: JSON.stringify({ name: name, email: email, message: message })
         })
             .then((res) => res.json())
             .then((res) => {
@@ -45,7 +45,7 @@ export const Contact = () => {
             return <p>{error}</p>;
         }
 
-      
+
 
     }
 
@@ -54,26 +54,26 @@ export const Contact = () => {
 
     return <>
         {submitted && <p>email sent successfully</p>}
-        <div className={styles.con}>
+        <div className={styles.con} id="contact">
             <div className={styles.leftCon}>
                 {/* <img src={mailIcon} alt="Mail Image" /> */}
                 {/* <IoIosMailOpen size={500} color={"#fff"}/> */}
-                <IoMailOutline size={500} className={styles.mailIcon} color="#70b59c"/>
+                <IoMailOutline size={500} className={styles.mailIcon} color="#70b59c" />
 
 
             </div>
             <div className={styles.rightCon}>
-            <h1 className="text-4xl font-bold text-[#70b59c]">Send me an email</h1>
+                <h1 className="text-4xl font-bold text-[#70b59c]">Send me an email</h1>
 
                 <form onSubmit={submit}>
-                    <Input type="name" label="Name" id="email"  value={name}
+                    <Input type="name" label="Name" id="email" value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
-                        
+
 
                     />
                     <Input type="email" label="Email" id="name" value={email}
-                        onChange={(e) => setEmail(e.target.value)} required 
+                        onChange={(e) => setEmail(e.target.value)} required
                         errorMessage={"Enter valid email"}
 
 

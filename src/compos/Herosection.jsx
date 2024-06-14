@@ -3,7 +3,7 @@ import styles from './Herosection.module.css';
 export const Herosection = () => {
     return (
         <>
-            <section className={styles.section}>
+            <section className={styles.section} id='#home'>
                 <div className={styles.sectionCon}>
                     <div className={styles.left}>
                         <div>

@@ -1,4 +1,4 @@
-import { FiBarChart, FiBell, FiDollarSign, FiPlay} from "react-icons/fi";
+
 import { FaGithub } from "react-icons/fa";
 
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,7 +9,7 @@ const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section className="p-4 bg-[#0d0d0e] flex flex-col">
+    <section className="p-4 bg-[#0d0d0e] flex flex-col" id="projects">
       <h1 className="text-6xl text-green-600  mb-9 mb-2 text-left self-start px-3">My Projects</h1>
       <div className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">
         {items.map((item) => {

@@ -2,7 +2,7 @@ import styles from './About.module.css'
 
 export const About = () =>  {
     return <>
-        <article>
+        <article id='about'>
             <h1 className='text-green-600'>About me</h1>
             <div className={styles.con}>
                 <div className={styles.imgCon}>
