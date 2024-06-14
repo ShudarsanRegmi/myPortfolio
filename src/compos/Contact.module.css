@@ -2,20 +2,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: cyan;
+    background-color: #1a1e1e;
     padding: 30px;
 }
 
 .leftCon {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: orange;
+    
+    /* background: orange; */
 }
 
 .rightCon form {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -23,12 +25,24 @@
     width: 100%;
 }
 .rightCon {
+    
+    border-radius: 5%;
     flex: 1;
-    background: pink;
+    background:#464d4c;
     padding: 30px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+
+
+}
+
+.rightCon:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    cursor: pointer;
 }
 .leftCon img {
     width: 250px;
