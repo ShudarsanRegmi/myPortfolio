@@ -10,6 +10,7 @@ import vite from '/vite.svg'
 import VerticalAccordion from './compos/VerticalAccordion'
 import {Social} from './compos/Social'
 import {Contact} from './compos/Contact'
+import {Footer} from './compos/Footer'
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
       <VerticalAccordion />
       <Social />
       <Contact />
+      <Footer />
     </>
   )
 }

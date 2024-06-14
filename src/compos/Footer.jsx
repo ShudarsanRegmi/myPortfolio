@@ -1,13 +1,11 @@
-import SliderNumber from "./utilities/SliderNumber"
-import styles from './Social.module.css'
 import {  FaTwitter, FaGithub, FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
+import styles from './Footer.module.css'
 
 
-
-export const Social = () => {
+export const Footer =()=> {
     return <>
         <div className={styles.con}>
-            <SliderNumber />
+            <h1 className='text-4xl font-bold pb-9 pt-6'>Thanks for your visit</h1>
             <div className={styles.linksCon}>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={30}/>
