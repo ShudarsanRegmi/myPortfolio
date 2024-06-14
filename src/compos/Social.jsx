@@ -9,9 +9,6 @@ export const Social = () => {
         <div className={styles.con}>
             <SliderNumber />
             <div className={styles.linksCon}>
-                <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">
-                    <FaFigma size={30}/>
-                </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={30}/>
                 </a>

@@ -58,7 +58,7 @@ export const Contact = () => {
             <div className={styles.leftCon}>
                 {/* <img src={mailIcon} alt="Mail Image" /> */}
                 {/* <IoIosMailOpen size={500} color={"#fff"}/> */}
-                <IoMailOutline size={500} color="#70b59c"/>
+                <IoMailOutline size={500} className={styles.mailIcon} color="#70b59c"/>
 
 
             </div>

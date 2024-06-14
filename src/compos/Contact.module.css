@@ -49,3 +49,18 @@
     height: auto;
     
 }
+
+.mailIcon {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 851px) {
+    .con {
+        flex-direction: column;
+    }
+
+    .leftCon {
+        display: none;
+    }
+}

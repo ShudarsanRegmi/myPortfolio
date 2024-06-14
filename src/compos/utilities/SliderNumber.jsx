@@ -4,7 +4,6 @@ import { FaFigma, FaTwitter, FaGithub, FaInstagram, FaLinkedin, FaDiscord } from
 import Facebook from '/facebook.svg'
 
 const slides = [
-    { icon: <FaFigma size={90} /> },
     { icon: <FaTwitter size={90} /> },
     { icon: <FaGithub size={90} /> },
     { icon: <FaInstagram size={90} /> },
