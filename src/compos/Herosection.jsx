@@ -7,7 +7,7 @@ export const Herosection = () => {
                 <div className={styles.sectionCon}>
                     <div className={styles.left}>
                         <div>
-                        <h1>Shudarsan Regmi</h1>
+                        <h1 className="text-green-600">Shudarsan Regmi</h1>
                         <h3>॥ सुदर्शन रेग्मी ॥</h3>
                         </div>
                         <h2>Full Stack Web Developer</h2>

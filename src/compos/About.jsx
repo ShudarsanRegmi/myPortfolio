@@ -3,7 +3,7 @@ import styles from './About.module.css'
 export const About = () =>  {
     return <>
         <article>
-            <h1>About me</h1>
+            <h1 className='text-green-600'>About me</h1>
             <div className={styles.con}>
                 <div className={styles.imgCon}>
                     <img src="/img2.png" alt="Image of Shudarsan Regmi" />
