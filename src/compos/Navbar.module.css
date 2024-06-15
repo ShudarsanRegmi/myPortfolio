@@ -38,3 +38,24 @@ nav {
     font-family: sans-serif;
     color: var(--gadha-white)
 }
+
+@media only screen and (max-width: 650px) {
+    .right ul {
+        background-color: #0a0a0a;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(-300px);
+        transition: transform 0.3s ease;
+
+    }
+    .right {
+
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+}
