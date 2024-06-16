@@ -12,16 +12,24 @@ export const Navbar = () => {
     const navul = useRef(null);
     const { width } = useViewport();
     const [nav, setNav] = useState(false);
-    const toggleNavbar = () => {
-        console.log("hello")
-        if (nav) {
-            navul.current.style.transform = "translate(0)";
-        } else {
-            navul.current.style.transform = "translateY(-300px)";
 
+
+
+
+    useEffect(() => {
+        console.log("2nd effect ran")
+
+        if (width < 650) {
+            if (nav) {
+                navul.current.style.transform = "translate(0)";
+            } else {
+                navul.current.style.transform = "translateY(-300px)";
+            }
         }
+    }, [nav,width]);
+
+    const toggleNavbar = () => {
         setNav(prev => !prev)
-        
     }
 
 
@@ -41,11 +49,13 @@ export const Navbar = () => {
                         <li><a href="/resume.pdf" target='_blank'>Resume</a></li>
                     </ul>
 
-                    {/* {width<650 && nav <FaBars onClick={()=>{toggleNavbar()}} />} */}
-                    {width < 650 && nav ? (
-                        <FaBars onClick={() => toggleNavbar()} />
-                    ) : (
-                        <ImCross onClick={() => toggleNavbar()} />
+
+                    {width < 650 && (
+                        !nav ? (
+                            <FaBars onClick={toggleNavbar} />
+                        ) : (
+                            <ImCross onClick={toggleNavbar} />
+                        )
                     )}
 
                 </div>
